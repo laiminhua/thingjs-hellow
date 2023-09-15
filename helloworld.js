@@ -23,7 +23,7 @@ app.on('load', function () {
 
 // 引用效果模板组件脚本
 THING.Utils.dynamicLoad([
-    './static/plugins/thing.effect.min/1.5.6/EffectThemeControl.min.js',
+    './static/plugins/thing.effect.min/1.5.2/EffectThemeControl.min.js',
     "/static/resource/ThingJS/697/frame.js"
 ], function () {
     app.on('load', function (ev) {

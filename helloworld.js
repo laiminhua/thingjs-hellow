@@ -1,7 +1,10 @@
 // 创建APP对象
 var app = new THING.App();
 // 引用拓扑组件脚本
-THING.Utils.dynamicLoad(['/static/js/thing.diagram.min.js'], function () {
+THING.Utils.dynamicLoad(['/static/js/thing.diagram.min.js',
+'./aa/index.js'
+
+], function () {
     // 初始化拓扑场景
     const graph = new THING.DIAGRAM.Graph({
         container: 'div2d', // 容器元素 id
@@ -11,5 +14,7 @@ THING.Utils.dynamicLoad(['/static/js/thing.diagram.min.js'], function () {
     // 视图加载完成
     graph.on('load', () => {
         console.log('加载完成');
+        aa()
     });
 })
+
